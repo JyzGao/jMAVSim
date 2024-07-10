@@ -1960,6 +1960,10 @@
         </description>
         <param index="1" label="System ID" minValue="0" maxValue="255" increment="1">Vehicle system id, this way ground station can request arm authorization on behalf of any vehicle</param>
       </entry>
+      <entry value="3002" name="MAV_CMD_NDI_PID" hasLocation="false" isDestination="false">
+        <description>Request NDI control switch</description>
+        <param index="1" label="State" minValue="0" maxValue="1" increment="1">0: PID, 1: NDI</param>
+      </entry>
       <entry value="4000" name="MAV_CMD_SET_GUIDED_SUBMODE_STANDARD" hasLocation="false" isDestination="false">
         <description>This command sets the submode to standard guided when vehicle is in guided mode. The vehicle holds position and altitude and the user can input the desired velocities along all three axes.
                   </description>
